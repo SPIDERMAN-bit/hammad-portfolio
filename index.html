@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hammad | Freelance Typist & Translator</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+  overflow-x: hidden;
+  transition: color 0.5s;
+}
+
+/* ===== Navigation ===== */
+nav {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+}
+nav a {
+  margin: 0 20px;
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover { color: #ffae00; }
+
+/* ===== Video Background ===== */
+#video-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+/* ===== Header ===== */
+header {
+  background: rgba(0,0,0,0.6);
+  padding: 100px 20px 50px;
+  margin-top: 50px;
+}
+header h1 { margin:0; font-size:3rem; }
+header p { font-size:1.3rem; }
+
+/* ===== Sections ===== */
+section {
+  padding: 50px 20px;
+  background: rgba(0,0,0,0.5);
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 900px;
+  transition: background 0.5s;
+}
+h2 { font-size:2rem; margin-bottom:20px; }
+p { font-size:1.1rem; line-height:1.6; text-align:justify; }
+ul { list-style:none; padding:0; font-size:1.1rem; text-align:left; }
+ul li { margin:8px 0; padding:8px; background: rgba(255,255,255,0.1); border-radius:8px; transition:0.3s; }
+ul li:hover { background: rgba(255,255,255,0.3); transform:scale(1.05); }
+a { color:#ffd700; text-decoration:none; font-weight:bold; }
+a:hover { color:#ffae00; }
+
+/* ===== Footer ===== */
+footer { background: rgba(0,0,0,0.6); padding:20px; margin-top:30px; }
+
+/* ===== Buttons ===== */
+#music-control, #theme-toggle {
+  position: fixed;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  border: none;
+  transition: 0.3s;
+}
+#music-control { bottom:20px; right:20px; background:#ffd700; color:black; }
+#music-control:hover { background:#ffae00; }
+#theme-toggle { top:20px; right:20px; background:#444; color:white; }
+#theme-toggle:hover { background:#666; }
+
+/* ===== Light Mode ===== */
+.light-mode { color:black; }
+.light-mode section { background: rgba(255,255,255,0.7); color:black; }
+.light-mode ul li { background: rgba(0,0,0,0.1); color:black; }
+.light-mode a { color: #0077cc; }
+.light-mode footer { background: rgba(255,255,255,0.5); color:black; }
+
+/* ===== Watermark ===== */
+#watermark {
+  position: fixed;
+  bottom:10px;
+  left:10px;
+  opacity:0.2;
+  pointer-events:none;
+  width:120px;
+  height:auto;
+}
+</style>
+</head>
+<body>
+
+<!-- Video Background -->
+<video autoplay muted loop id="video-bg">
+  <source src="yourvideo.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<!-- Navigation -->
+<nav>
+  <a href="#about">About Me</a>
+  <a href="#skills">Skills</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- Background Music -->
+<audio id="bg-music" loop>
+  <source src="background.mp3" type="audio/mpeg">
+  <source src="background.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Buttons -->
+<button id="music-control">🎵 Play Music</button>
+<button id="theme-toggle">🌙 Dark Mode</button>
+
+<!-- Watermark -->
+<img src="watermark.JPEG" alt="Hammad" id="watermark">
+
+<!-- Header -->
+<header>
+  <h1>Hammad</h1>
+  <p>Freelance Typist & Translator</p>
+</header>
+
+<!-- About Me -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+  Assalamu Alaikum! 👋 I’m Hammad, a dedicated freelancer with 3+ years of experience in typing, translation, and data entry. I specialize in fast & accurate typing (60 WPM), Urdu ↔ English translation, Excel & Word formatting, and providing professional results for clients worldwide. I am committed to reliability, attention to detail, and delivering projects on time.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <h2>My Skills</h2>
+  <ul>
+    <li>✅ Fast & Accurate Typing (60 WPM)</li>
+    <li>✅ Urdu ↔ English Translation</li>
+    <li>✅ Data Entry & Formatting</li>
+    <li>✅ Microsoft Word & Excel Tasks</li>
+    <li>✅ PDF Editing & Formatting</li>
+    <li>✅ Online Research & Copywriting</li>
+  </ul>
+</section>
+
+<!-- Portfolio -->
+<section id="portfolio">
+  <h2>Portfolio / Samples</h2>
+  <ul>
+    <li>📂 <a href="#">Typed Document (PDF)</a></li>
+    <li>📂 <a href="#">Translated Article (Before & After)</a></li>
+    <li>📂 <a href="#">Excel Sheet Formatting</a></li>
+    <li>📂 <a href="#">Data Entry Projects</a></li>
+  </ul>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>📩 Fiverr: <a href="https://www.fiverr.com/s/BRpE5mk" target="_blank">Click Here</a></p>
+  <p>📧 Gmail: <a href="mailto:hr7713840@gmail.com">hr7713840@gmail.com</a></p>
+  <p>🌐 Socials: 
+    <a href="#">LinkedIn</a> | 
+    <a href="#">Instagram</a> | 
+    <a href="#">Twitter</a>
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Hammad | Freelance Typist & Translator</p>
+</footer>
+
+<script>
+  // Music Control
+  const music = document.getElementById("bg-music");
+  const controlBtn = document.getElementById("music-control");
+  controlBtn.addEventListener("click", () => {
+    if (music.paused) { music.play(); controlBtn.textContent="⏸ Pause Music"; }
+    else { music.pause(); controlBtn.textContent="🎵 Play Music"; }
+  });
+
+  // Theme Toggle
+  const themeBtn = document.getElementById("theme-toggle");
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+    themeBtn.textContent = document.body.classList.contains("light-mode") ? "🌙 Dark Mode" : "🌑 Light Mode";
+  });
+</script>
+
+</body>
+</html>
